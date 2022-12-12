@@ -3,10 +3,12 @@
 #include <stdio.h>
 
 /**
- * main - Determine if number is positive , negeative or zero.
- *
- * return: Always 0 (Success)
+ * main - main block
+ * Description: Get a random number and print the number
+ * and if it is positive, negative or zero.
+ * return: 0 Always (Success)
  */
+
 int main(void)
 {
 	int n;
