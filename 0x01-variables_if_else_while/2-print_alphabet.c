@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * main - main block
- * Description: Get a random it with 5.
+ * main -entry point
+ * Description: program that prints the alphabet in lowercase
  * return: 0
  */
 int main(void)
@@ -16,7 +16,7 @@ int main(void)
 		c++;
 	}
 
-	putchar('\n')
+	putchar('\n');
 	return (0);
-
 }
+
