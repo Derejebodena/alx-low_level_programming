@@ -5,9 +5,7 @@
 /**
  * main - main block
  *
- * Description: Get a random number and print the number
- * and if it is positive, negative or zero.
- * return: 0 Always (Success)
+ * Return: returns negative , positive or zero.
  */
 
 int main(void)
@@ -31,5 +29,3 @@ int main(void)
 	return (0);
 
 }
-
-
