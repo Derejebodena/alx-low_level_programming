@@ -4,6 +4,7 @@
  * main - prints the size of various type
  *Return: 0 if existed properly, non-zero otherwise
  */
+
 int main(void)
 {
 	printf("size of a char : %d byte(s)\n", sizeof(char));
