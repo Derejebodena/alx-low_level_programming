@@ -1,9 +1,9 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include <stdio.h>
+
 /**
- * main -entry point
- * Description: program that prints the alphabet in lowercase
- * return: 0
+ * main - Entry point
+ * Return: lowercase
  */
 int main(void)
 {
@@ -19,4 +19,3 @@ int main(void)
 	putchar('\n');
 	return (0);
 }
-
