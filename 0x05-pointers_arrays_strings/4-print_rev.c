@@ -4,7 +4,7 @@
  * print_rev - function that prints a string, in reverse
  *
  * @s: this is input string
- * Return: Always 0.
+ *
  */
 void print_rev(char *s)
 {
@@ -17,5 +17,4 @@ void print_rev(char *s)
 		_putchar(s[index]);
 	}
 	_putchar('\n');
-	return (0);
 }
