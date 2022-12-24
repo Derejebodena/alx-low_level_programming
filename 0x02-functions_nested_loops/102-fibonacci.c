@@ -28,6 +28,6 @@ int main(void)
 		j = k;
 		k = l;
 	}
-	printf("\n")
+	printf("\n");
 	return (0);
 }
