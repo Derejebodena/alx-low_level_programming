@@ -28,5 +28,6 @@ int main(void)
 		j = k;
 		k = l;
 	}
+	printf("\n")
 	return (0);
 }
