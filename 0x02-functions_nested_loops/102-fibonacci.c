@@ -27,7 +27,7 @@ int main(void)
 		l = j + k;
 		j = k;
 		k = l;
-	printf("\n");
 	}
+	printf("\n");
 	return (0);
 }
