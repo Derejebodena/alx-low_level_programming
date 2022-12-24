@@ -14,7 +14,7 @@ int main(void)
 
 	k = 2;
 
-	for (i = 0; i <= 50; ++i)
+	for (i = 0; i < 50; ++i)
 	{
 		if (j != 20365011074)
 		{
@@ -27,7 +27,7 @@ int main(void)
 		l = j + k;
 		j = k;
 		k = l;
-	}
 	printf("\n");
+	}
 	return (0);
 }
