@@ -23,10 +23,8 @@ int main(void)
 		{
 			printf("%lu, ", next);
 		}
-
 		first = second;
 		second = next;
-
 		next = first + second;
 		count++;
 
