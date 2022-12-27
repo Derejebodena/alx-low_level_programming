@@ -1,5 +1,9 @@
 #include <stdio.h>
 
+/**
+ * main - entry point
+ * Return: 0
+ */
 int main(void)
 {
 	int n;
@@ -18,7 +22,6 @@ int main(void)
 
 	*(p + 5) = 98;
 		/* this print 98\n */
-	print("a[2] = %d\n", a[2]);
+	printf("a[2] = %d\n", a[2]);
 	return (0);
 }
-
