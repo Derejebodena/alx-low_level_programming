@@ -23,7 +23,7 @@ int main(int args, char *argv[])
 		printf("0\n");
 		return (0);
 	}
-	for (; c >= 0)
+	for (; c >= 0;)
 	{
 		if (c >= 25)
 			c -= 25;
