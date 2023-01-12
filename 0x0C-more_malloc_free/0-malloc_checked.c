@@ -1,10 +1,10 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * malloc_cheched - allocate memory using malloc
+ * malloc_checked - allocate memory using malloc
  * @b: size of memory to be allocated
  *
- * Return: a pointer to the allocated memory
+ * Return: pointer to allocated memory
  */
 void *malloc_checked(unsigned int b)
 {
