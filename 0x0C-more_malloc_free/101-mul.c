@@ -1,4 +1,4 @@
-#include "main.h"                                                                                                                                               
+#include "main.h"
 #include <stdlib.h>
 #include <stdio.h>
 int find_len(char *str);                                                                                                                                        
@@ -141,7 +141,7 @@ void add_nums(char *final_prod, char *next_prod, int next_len)
 		next_prod--;
 		next_len--;
 	}
-	for (; next_len >= 0; && *next_prod != 'x'; next_len--)
+	for (; next_len >= 0 && *next_prod != 'x'; next_len--)
 	{
 		num = (*next_prod - '0');
 		num += tens;
@@ -187,7 +187,7 @@ int main(int argc, char *argv[])
 	final_prod = create_xarray(size + 1);
 	next_prod = create_xarray(size + 1);
 
-	for (index = find_len(argv[2]) - 1; index >=0; index--)
+	for (index = find_len(argv[2]) - 1; index >= 0; index--)
 	{
 		digit = get_digit(*(argv[2] + index));
 		get_prod(next_prod, argv[1], digit, zeroes++);
