@@ -1,10 +1,10 @@
 #include "main.h"
 #include <stdlib.h>
 #include <stdio.h>
-int find_len(char *str);                                                                                                                                        
-char *create_xarray(int size);                                                                                                                                  
-char *iterate_zeroes(char *str);                                                                                                                                
-void get_prod(char *prod, char *mult, int digit, int zeroes);                                                                                                   
+int find_len(char *str);
+char *create_xarray(int size);
+char *iterate_zeroes(char *str);
+void get_prod(char *prod, char *mult, int digit, int zeroes);
 void add_nums(char *final_prod, char *next_prod, int next_len);
 /**
  * find_len - finds the length of string
@@ -57,9 +57,9 @@ char *iterate_zeroes(char *str)
 }
 /**
  * get_digit - converts a digit character to a corresponding int
- * @c: the character to be converted 
+ * @c: the character to be converted
  *
- * Return: the converted int 
+ * Return: the converted int
  */
 int get_digit(char c)
 {
@@ -76,24 +76,22 @@ int get_digit(char c)
  * get_prod - multiplies a string of numbers by single digit
  * @prod: the buffer to store result
  * @mult: the string of numbers
- * @digit: the single digit 
- * @zeroes: he necessary number of leading zeroes 
+ * @digit: the single digit
+ * @zeroes: the necessary number of leading zeroes
  */
 void get_prod(char *prod, char *mult, int digit, int zeroes)
 {
 	int mult_len, num, tens = 0;
 
 	mult_len = find_len(mult) - 1;
-	mult += mult_len; 
+	mult += mult_len;
 
 	while (*prod)
 	{
 		*prod = 'x';
 		prod++;
 	}
-	prod--;
-
-	while (zeroes--)
+	while (zeroes)
 	{
 		*prod = '0';
 		prod--;
@@ -157,10 +155,10 @@ void add_nums(char *final_prod, char *next_prod, int next_len)
 }
 
 /**
- * main - multiplies two positive number
+ * main - multiplies two positive numbers
  * @argv: number of argument passed
- * @argc: array of pointer 
- * return: Always 0
+ * @argc: array of pointer
+ * Return: Always 0
  */
 int main(int argc, char *argv[])
 {
